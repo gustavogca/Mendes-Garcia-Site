@@ -200,7 +200,7 @@ header {
 .card-info {
     display: flex;
     align-items: center;
-    background: #f3fffe;
+    background: #f7f6f6;
     padding: 15px;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -598,6 +598,93 @@ header {
             }
         }
 
+.carrossel-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0;
+    width: 100%;
+}
+
+.carrossel-viewport {
+    overflow: hidden;
+    width: 1200px;
+}
+
+.carrossel-track {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.carrossel-track img {
+    width: 120px;
+    height: auto;
+    filter: grayscale(1);
+    opacity: 0.8;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+.carrossel-track img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.carrossel-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 0 10px;
+    transition: color 0.2s;
+}
+
+.carrossel-btn:hover {
+    color: #0077c8;
+}
+
+.carrossel-track .allianz {
+    height: 180px;
+    width: auto;
+}
+
+.carrossel-track .azul {
+    height: 60px;
+    width: auto;
+}
+
+.carrossel-track .tokio {
+    height: 100px;
+    width: auto;
+}
+
+.carrossel-track .porto {
+    height: 130px;
+    width: auto;
+}
+
+.carrossel-track .itau {
+    height: 50px;
+    width: auto;
+}
+
+.carrossel-track .bradesco {
+    height: 105px;
+    width: auto;
+}
+
+.carrossel-track .yelum {
+    height: 40px;
+    width: auto;
+}
+
+.carrossel-track .hdi {
+    height: 70px;
+    width: auto;
+}
 
 footer {
     background-color: #014f82;
