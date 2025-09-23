@@ -190,6 +190,7 @@ header {
 
     .sobreNos h2 {
         font-size: 2.5em;
+        color: #014f82;
     }
 
     .sobreNos p {
@@ -451,6 +452,7 @@ header {
         font-size: 2.5em;
         margin-bottom: 5px;
         font-style: bold;
+        color: #014f82;
     }
 
     .contato-info p {
@@ -461,6 +463,7 @@ header {
     .contato-info strong {
         font-weight: bold;
         font-size: 24px;
+        color: #014f82;
     }
 
     .info-item {
@@ -607,84 +610,208 @@ header {
     width: 100%;
 }
 
-.carrossel-viewport {
-    overflow: hidden;
-    width: 1200px;
-}
+    .carrossel-viewport {
+        overflow: hidden;
+        width: 1200px;
+    }
 
-.carrossel-track {
+    .carrossel-track {
+        display: flex;
+        gap: 60px;
+        align-items: center;
+        transition: transform 0.5s;
+    }
+
+    .carrossel-track img {
+        width: 120px;
+        height: auto;
+        filter: grayscale(1);
+        opacity: 0.8;
+        transition: filter 0.3s, opacity 0.3s;
+    }
+
+    .carrossel-track img:hover {
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    .carrossel-btn {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #333;
+        padding: 0 10px;
+        transition: color 0.2s;
+    }
+
+    .carrossel-btn:hover {
+        color: #0077c8;
+    }
+
+    .carrossel-track .allianz {
+        height: 180px;
+        width: auto;
+    }
+
+    .carrossel-track .azul {
+        height: 60px;
+        width: auto;
+    }
+
+    .carrossel-track .tokio {
+        height: 100px;
+        width: auto;
+    }
+
+    .carrossel-track .porto {
+        height: 130px;
+        width: auto;
+    }
+
+    .carrossel-track .itau {
+        height: 50px;
+        width: auto;
+    }
+
+    .carrossel-track .bradesco {
+        height: 105px;
+        width: auto;
+    }
+
+    .carrossel-track .yelum {
+        height: 40px;
+        width: auto;
+    }
+
+    .carrossel-track .hdi {
+        height: 70px;
+        width: auto;
+    }
+
+.banner-seguro {
+    width: 100%;
+    height: 400px;
     display: flex;
-    gap: 60px;
+    justify-content: center;
     align-items: center;
-    transition: transform 0.5s;
+    background-color: #014f82;
+    background-image:
+        linear-gradient(0deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 100px 100px;
 }
 
-.carrossel-track img {
-    width: 120px;
-    height: auto;
-    filter: grayscale(1);
-    opacity: 0.8;
-    transition: filter 0.3s, opacity 0.3s;
+    .titulo-seguro {
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+.titulo-seguro {
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0;
 }
 
-.carrossel-track img:hover {
-    filter: grayscale(0);
-    opacity: 1;
+.seguro {
+    width: 100%;
+    background: #fff;
+    padding: 60px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.carrossel-btn {
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #333;
-    padding: 0 10px;
-    transition: color 0.2s;
+.descricao-seguro {
+    max-width: 1100px;
+    margin: 0 auto;
+    color: #222;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
-.carrossel-btn:hover {
-    color: #0077c8;
+.descricao-seguro h2 {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #014f82;
+    margin-bottom: 18px;
+    text-align: left;
 }
 
-.carrossel-track .allianz {
-    height: 180px;
-    width: auto;
+.descricao-seguro h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #014f82;
+    margin: 36px 0 18px 0;
+    text-align: left;
 }
 
-.carrossel-track .azul {
-    height: 60px;
-    width: auto;
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 24px;
 }
 
-.carrossel-track .tokio {
-    height: 100px;
-    width: auto;
+.card-beneficio {
+    background: #f7f9fa;
+    border-radius: 20px;
+    padding: 28px 24px;
+    border: 1px solid #e3e8ee;
+    box-shadow: 0 2px 12px rgba(34,48,74,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: box-shadow 0.2s;
 }
 
-.carrossel-track .porto {
-    height: 130px;
-    width: auto;
+.card-beneficio:hover {
+    box-shadow: 0 4px 24px rgba(34,48,74,0.10);
 }
 
-.carrossel-track .itau {
-    height: 50px;
-    width: auto;
+.card-beneficio h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #22304a;
+    margin-bottom: 10px;
 }
 
-.carrossel-track .bradesco {
-    height: 105px;
-    width: auto;
+.card-beneficio p {
+    font-size: 1.1rem;
+    color: #222;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.carrossel-track .yelum {
-    height: 40px;
-    width: auto;
-}
-
-.carrossel-track .hdi {
-    height: 70px;
-    width: auto;
-}
+@media (max-width: 900px) {
+    .banner-seguro {
+        padding: 32px 0 20px 0;
+    }
+    .titulo-seguro {
+        font-size: 2rem;
+    }
+    .descricao-seguro {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .grid-beneficios {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .card-beneficio {
+        padding: 18px 10px;
+    }
+    .descricao-seguro h2 {
+        font-size: 1.3rem;
+    }
+    .descricao-seguro h3 {
+        font-size: 1.1rem;
+    }
+} 
 
 footer {
     background-color: #014f82;
